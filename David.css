@@ -1,0 +1,111 @@
+/* General Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f5ef; /* Light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  width: 100%;
+}
+
+/* Display screen */
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f2f2f2; /* Light gray background */
+  color: #333;
+}
+
+/* Buttons container with grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Button styling */
+button {
+  padding: 20px;
+  font-size: 22px;
+  border: none;
+  border-radius: 12px;
+  background-color: #af814c; /* Green for general buttons */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Specific button colors */
+button.operator {
+  background-color: #FF9800; /* Orange for operators */
+}
+
+button.equals {
+  background-color: #2196F3; /* Blue for equals */
+}
+
+button.clear {
+  background-color: #f44336; /* Red for C button */
+}
+
+button.delete {
+  background-color: #FFC107; /* Yellow for DEL */
+}
+
+/* Hover and active button effects */
+button:hover {
+  background-color: #388E3C; /* Dark green on hover */
+}
+
+button.operator:hover {
+  background-color: #F57C00; /* Dark orange for operators */
+}
+
+button.equals:hover {
+  background-color: #1976D2; /* Dark blue for equals */
+}
+
+button.clear:hover {
+  background-color: #D32F2F; /* Dark red for clear */
+}
+
+button.delete:hover {
+  background-color: #FFA000; /* Dark yellow for DEL */
+}
+
+/* Zero button spanning 2 columns */
+button.zero {
+  grid-column: span 2;
+}
+
+/* Additional small styling for clarity */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Animation for the calculator display */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.calculator {
+  animation: fadeIn 0.5s ease-in-out;
+}
