@@ -19,11 +19,14 @@ A responsive, beginner-friendly calculator built with **HTML, CSS, and JavaScrip
 ## 🚀 How to Run It
 
 1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/calculator.git
+   
+```bash
+   git clone https://github.com/Caelestibus/David-s-Simple-Calculator.git
+```
+---
 
+## 🧠 Why I Built This
 
-🧠 Why I Built This
 As a Product Manager learning frontend development and JavaScript, this project helped me understand:
 
 1. DOM manipulation
@@ -33,3 +36,5 @@ As a Product Manager learning frontend development and JavaScript, this project 
 3. UI responsiveness and styling
 
 4. Clean file structuring
+
+---
